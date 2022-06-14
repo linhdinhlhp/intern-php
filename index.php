@@ -16,8 +16,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <form action="http://127.0.0.1:5500/index.php" method="post">
-        <div class="container">
+  <div id="wrapper">
+     <form action="http://127.0.0.1:5500/index.php" method="post">
+      <div class="container">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h2 class="text-center">Registration Form - Input student's Detail Information</h2>
@@ -36,9 +37,9 @@
                       <label for="birthday">Birthday:</label>
                       <input type="date" class="form-control" id="birthday">
                     </div>
-                    <div class="form-group">
-                      <label for="telenumber">telephone number:</label>
-                      <input required="true" type="number" class="form-control" id="pwd">
+                    <div class="form-group form-row">
+                      <label   for="telenumber">telephone number:</label>
+                      <input required="true" type="number" class="form-control " id="pwd">
                     </div>
                     <div class="form-group">
                       <label for="confirmation_pwd">Identification number:</label>
@@ -64,11 +65,13 @@
                     </div>
     
     
-                    <button type="submit" class="btn btn-success">Register</button>
+                    <button type="submit" class="btn btn-primary">Register</button>
                 </div>
             </div>
         </div>
-    </form>
+     </form>
+  </div>
+    
 	
 </body>
 </html>
