@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index_form.css">
+    <title> Registration Form</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+          <div class="row justify-content-around">
+            <form action="" class="col-md-7 bg-light p-3 my-3">
+              <div class="text-center text-uppercase h3 py-3">
+                   <h3>Registration Form</h1> 
+              </div>
+    <!-- //name -->
+              <div class="form-group">
+                <label for="usr">Name:</label>
+                <input required="true" type="text" class="form-control" id="usr" placeholder="enter full name">
+              </div>
+    <!-- //email    -->
+              <div class="form-group">
+                <label for="email" c>Email:</label>
+                <input required="true" type="email" class="form-control" id="email" placeholder="Enter email">
+              </div>
+    <!-- birthday -->
+              <div class="form-group">
+                <label for="birthday" >Birthday:</label>
+                <input type="date" class="form-control" id="birthday">
+              </div>
+    
+    <!-- tele+identication_number -->
+            
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="telenumber" >Telephone number:</label>
+                     <input  required="true" type="number" class="form-control" id="telenumber" placeholder="Phone number">
+                </div>
+                <div class="form-group col-md-6">
+                        <label for="Identification_number" >Identification</label>
+                        <input required="true" type="number" class="form-control" id="Identification_number" placeholder="Identification number">
+                </div>
+              </div>
+    <!-- gender -->
+    <table>
+      <tr>
+        <th class="gender">Gender</th>
+        <th>
+          <div class="form-check form-check-inline ">
+          <input type="radio" name="gender" id="male" value="male" class="form-check-input">
+          <label for="male" class="form-check-label">Male</label>
+          </div>
+      </th>
+        <th><div class="form-check form-check-inline ">
+          <input type="radio" name="gender" id="female" value="female" class="form-check-input">
+          <label for="female" class="form-check-label">Female</label>
+        </div>
+      </th>
+      </tr>
+    </table>
+    <!-- adress -->
+              <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" class="form-control" id="address">
+              </div>
+    
+    <!-- dropselect_Province -->
+              <div class="Province">
+                <label for="FormControlSelect" >Province/City:</label>
+                <select class="form-control-life" id="FormControlSelect">
+                  <option>Ha Noi</option>
+                  <option>Nam Dinh</option>
+                  <option>Thai Binh</option>
+                  <option>Ninh Binh</option>
+                  <option>Hai Duong</option>
+                </select>
+              </div>
+      <!--button  -->
+    <div>
+      <button type="submit" class="btn btn-success">Register</button>
+    </div>
+   
+            </form>
+          </div>
+        </div>
+    
+    </div>
+    
+</body>
+</html>
